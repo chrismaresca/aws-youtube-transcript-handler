@@ -1,0 +1,15 @@
+# Environment Variables
+.env
+
+# Serverless
+.serverless
+
+# PNPM and Node
+pnpm-lock.yaml
+node_modules
+
+# VSCode
+.vscode
+
+# Pytest
+.pytest_cache

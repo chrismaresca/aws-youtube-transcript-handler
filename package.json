@@ -1,0 +1,7 @@
+{
+	"dependencies": {
+		"serverless-functions-base-path": "^1.0.33",
+		"serverless-plugin-resource-tagging": "^1.2.0",
+		"serverless-python-requirements": "^6.1.1"
+	}
+}

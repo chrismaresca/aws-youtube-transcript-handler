@@ -1,0 +1,27 @@
+# "service" is the name of this project. This will also be added to your AWS resource names.
+service: youtube-transcript-service-v1
+
+plugins:
+  - serverless-python-requirements
+  - serverless-plugin-resource-tagging
+  - serverless-functions-base-path
+
+custom:
+  pythonRequirements:
+    dockerizePip: non-linux
+  functionsBasePath: src
+
+
+provider:
+  name: aws
+  runtime: python3.12
+  stackTags:
+    Brand: chris-maresca
+
+functions:
+  youtube_transcript_handler:
+    handler: handler.youtube_transcript_handler
+    events:
+      - httpApi:
+          path: /
+          method: post
