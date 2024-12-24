@@ -34,6 +34,12 @@ For a brief explanation of each environment variable, see below:
 
 - **LOG_LEVEL**: Logging level (default: DEBUG).
 
+- **USE_PROXY**: Use a proxy to fetch the transcript (default: false).
+
+- **PROXY_USERNAME**: The username for the proxy (default: none).
+
+- **PROXY_PASSWORD**: The password for the proxy (default: none).
+
 5. Update `serverless.yml` to include the `serverless-python-requirements` plugin.
 
 6. Update `serverless.yml` to include the `serverless-plugin-resource-tagging` plugin.
